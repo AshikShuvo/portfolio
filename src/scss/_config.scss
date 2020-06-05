@@ -29,3 +29,33 @@ $background-opacity:0.5;
         }
     }
 }
+
+@function set-text-color($color){
+    @if (lightness($color)>40){
+        @return #000;
+
+    }@else{
+        @return #fff;
+    }
+}
+
+@mixin mediainSm {
+    @media screen and (max-width:500px){
+        @content;
+    }
+}
+@mixin mediainMd {
+    @media screen and (max-width:768px){
+        @content;
+    }
+}
+@mixin mediainLg {
+    @media screen and (min-width:769px) and (max-width:1170px){
+       @content;
+    }
+}
+@mixin mediainXl {
+    @media screen and (min-width:1171px){
+        @content;
+    }
+}
