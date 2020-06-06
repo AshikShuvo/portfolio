@@ -1,8 +1,12 @@
 @include mediainXl{
-
+    .projects{
+        grid-template-columns: repeat(4,1fr);
+    }
 }
 @include mediainLg{
-    
+    .projects{
+        grid-template-columns: repeat(3,1fr);
+    }
 }
 @include mediainMd {
     main{
@@ -44,9 +48,15 @@
     'edu3';
     grid-template-columns: 1fr;
 }
+.projects{
+    grid-template-columns: repeat(2,1fr);
+}
 }
 @include mediainSm{
     main#home h1{
         margin-top: 10vh;
+    }
+    .projects{
+        grid-template-columns: 1fr;
     }
 }
