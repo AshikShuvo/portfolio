@@ -63,7 +63,7 @@ class TypeWriter {
   
   // Init App
   function init() {
-    let elmnt=["Developer", "Designer", "Creator"];
+    let elmnt=["Full Stack Developer", "Designer", "Creator"];
     const txtElement = document.querySelector('.txt-type');
     const words = elmnt;
     const wait = txtElement.getAttribute('data-wait');
